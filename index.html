@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ali Abbasi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 16px 60px;
+      line-height: 1.7;
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .text-block {
+      flex: 1 1 260px;
+    }
+    img.profile {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #ccc;
+    }
+    h1 {
+      margin-bottom: 4px;
+    }
+    h2 {
+      margin-top: 24px;
+    }
+    nav {
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+    nav a {
+      margin-right: 10px;
+      text-decoration: none;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .tagline {
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+    .chips span {
+      display: inline-block;
+      margin-right: 6px;
+      margin-top: 6px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      border: 1px solid #ccc;
+      font-size: 0.8rem;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.85rem;
+      opacity: 0.7;
+    }
+    a {
+      color: inherit;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Add a profile photo later by uploading me.jpg and uncommenting below -->
+    <!-- <img src="me.jpg" alt="Ali Abbasi" class="profile"> -->
+    <div class="text-block">
+      <h1>Ali Abbasi</h1>
+      <div class="tagline">
+        PhD Student in Computer Science, University of Southern California (USC)
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="chips">
+        <span>Traffic Engineering</span>
+        <span>Network Optimization</span>
+        <span>Federated Learning</span>
+        <span>LLM Steering & MoA</span>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      I am a PhD student in Computer Science at the University of Southern California (USC).
+      My research interests lie at the intersection of
+      <strong>network optimization</strong>, <strong>traffic engineering in time-varying networks</strong>,
+      and <strong>machine learning for systems</strong>. I also work on
+      federated learning and large language model steering / mixture-of-agents.
+    </p>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <ul>
+      <li>
+        <strong>Network interdiction on trees</strong> –
+        dynamic programming and optimization methods for edge and node removal
+        to interdict facility reachability.
+      </li>
+      <li>
+        <strong>Traffic engineering for satellite / WAN networks</strong> –
+        predictive optimization and learning-based TE over time-varying topologies.
+      </li>
+      <li>
+        <strong>Federated learning & carbon-aware training</strong> –
+        methods such as FedGreen / FedGreenCS and WeiAvgCS for efficient, diverse, and greener FL.
+      </li>
+      <li>
+        <strong>LLM steering & mixture-of-agents</strong> –
+        activation steering, MoE/MoA-style architectures, and evaluation of their capabilities.
+      </li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Selected Projects</h2>
+    <ul>
+      <li>
+        <strong>Interdicting Facilities in Tree Networks</strong> –
+        dynamic programming algorithm with experiments against FR and Gurobi on large random trees.
+      </li>
+      <li>
+        <strong>Satellite Traffic Engineering</strong> –
+        simulation of LEO-like constellations and TE formulations that couple prediction with routing decisions.
+      </li>
+      <li>
+        <strong>Greener Federated Learning</strong> –
+        FedGreen-style methods that adapt model size for carbon-aware, communication-efficient tra
