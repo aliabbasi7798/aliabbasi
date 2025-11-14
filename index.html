@@ -5,9 +5,7 @@
   <title>Ali Abbasi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    :root {
-      color-scheme: light dark;
-    }
+    :root { color-scheme: light dark; }
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       max-width: 900px;
@@ -22,22 +20,16 @@
       align-items: center;
       margin-bottom: 40px;
     }
-    .text-block {
-      flex: 1 1 260px;
-    }
+    .text-block { flex: 1 1 260px; }
     img.profile {
-      width: 140px;
-      height: 140px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       object-fit: cover;
       border: 2px solid #ccc;
     }
-    h1 {
-      margin-bottom: 4px;
-    }
-    h2 {
-      margin-top: 24px;
-    }
+    h1 { margin-bottom: 4px; }
+    h2 { margin-top: 24px; }
     nav {
       margin-top: 8px;
       font-size: 0.95rem;
@@ -46,12 +38,8 @@
       margin-right: 10px;
       text-decoration: none;
     }
-    section {
-      margin-bottom: 30px;
-    }
-    ul {
-      padding-left: 20px;
-    }
+    section { margin-bottom: 30px; }
+    ul { padding-left: 20px; }
     .tagline {
       font-size: 0.95rem;
       opacity: 0.85;
@@ -71,18 +59,13 @@
       font-size: 0.85rem;
       opacity: 0.7;
     }
-    a {
-      color: inherit;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+    a { color: inherit; }
+    a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <header>
-    <!-- Add a profile photo later by uploading me.jpg and uncommenting below -->
-    <!-- <img src="me.jpg" alt="Ali Abbasi" class="profile"> -->
+    <img src="profile.jpeg" alt="Ali Abbasi" class="profile">
     <div class="text-block">
       <h1>Ali Abbasi</h1>
       <div class="tagline">
@@ -99,7 +82,7 @@
         <span>Traffic Engineering</span>
         <span>Network Optimization</span>
         <span>Federated Learning</span>
-        <span>LLM Steering & MoA</span>
+        <span>LLM Steering &amp; MoA</span>
       </div>
     </div>
   </header>
@@ -128,11 +111,11 @@
         predictive optimization and learning-based TE over time-varying topologies.
       </li>
       <li>
-        <strong>Federated learning & carbon-aware training</strong> –
+        <strong>Federated learning &amp; carbon-aware training</strong> –
         methods such as FedGreen / FedGreenCS and WeiAvgCS for efficient, diverse, and greener FL.
       </li>
       <li>
-        <strong>LLM steering & mixture-of-agents</strong> –
+        <strong>LLM steering &amp; mixture-of-agents</strong> –
         activation steering, MoE/MoA-style architectures, and evaluation of their capabilities.
       </li>
     </ul>
@@ -151,4 +134,57 @@
       </li>
       <li>
         <strong>Greener Federated Learning</strong> –
-        FedGreen-style methods that adapt model size for carbon-aware, communication-efficient tra
+        FedGreen-style methods that adapt model size for carbon-aware, communication-efficient training.
+      </li>
+      <li>
+        <strong>Mixture-of-Agents for LLMs</strong> –
+        experiments with proposer/aggregator architectures and activation steering for reasoning quality.
+      </li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Publications &amp; Preprints</h2>
+    <ul>
+      <li>
+        <strong>FedGreen: Carbon-Aware Federated Learning with Model Size Adaptation</strong>, 
+        IEEE ICC 2024 – GreenNetwork Workshop.
+      </li>
+      <li>
+        <strong>WeiAvgCS: Federated Learning Model Aggregation Promoting Data Diversity</strong>, 
+        IEEE ICC 2024 – ETASN Workshop.
+      </li>
+      <li>
+        <strong>Edge and Node Removal in Tree Networks to Interdict Facility Reachability</strong>, 
+        manuscript under review.
+      </li>
+      <!-- Add more items here as they are accepted/preprinted -->
+    </ul>
+    <!-- Once you upload your CV PDF to the repo root (e.g., Ali_Abbasi_CV.pdf), uncomment:
+    <p><a href="Ali_Abbasi_CV.pdf" target="_blank">Download my CV (PDF)</a></p>
+    -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Email: <a href="mailto:abbasia@usc.edu">abbasia@usc.edu</a><br>
+      GitHub: <a href="https://github.com/aliabbasi7798" target="_blank">
+        github.com/aliabbasi7798
+      </a><br>
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/ali-abbasi-a968b315b/" target="_blank">
+        Ali Abbasi on LinkedIn
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Ali Abbasi
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
