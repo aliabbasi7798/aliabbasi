@@ -76,13 +76,15 @@
         <a href="#research">Research</a>
         <a href="#projects">Projects</a>
         <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="chips">
-        <span>Traffic Engineering</span>
-        <span>Network Optimization</span>
-        <span>Federated Learning</span>
-        <span>LLM Steering &amp; MoA</span>
+        <span>Optimization</span>
+        <span>Graph Neural Networks</span>
+        <span>Distributed Learning</span>
+        <span>Satellite Communication</span>
+
       </div>
     </div>
   </header>
@@ -90,11 +92,11 @@
   <section id="about">
     <h2>About</h2>
     <p>
-      I am a PhD student in Computer Science at the University of Southern California (USC).
-      My research interests lie at the intersection of
-      <strong>network optimization</strong>, <strong>traffic engineering in time-varying networks</strong>,
-      and <strong>machine learning for systems</strong>. I also work on
-      federated learning and large language model steering / mixture-of-agents.
+      I am a PhD student in Computer Science at the University of Southern California (USC),
+      working in the <a href="https://qed.usc.edu/" target="_blank">QED Lab</a> under the supervision
+      of <strong>Prof. Leana Golubchik</strong>. My research interests lie at the intersection of
+      <strong>network optimization</strong>, <strong>traffic engineering in time-varying and satellite networks</strong>,
+      , <strong>machine learning for systems</strong> and <strong>optimization methods using machine learning.</strong>. I received my M.Sc. from University of calgary in 2024 and my B.Sc. in Computer Engineering from Sharif University of Technology in 2022.
     </p>
   </section>
 
@@ -102,21 +104,16 @@
     <h2>Research</h2>
     <ul>
       <li>
-        <strong>Network interdiction on trees</strong> –
-        dynamic programming and optimization methods for edge and node removal
+        <strong>Traffic engineering for satellite / WAN networks</strong>
+        Predictive optimization and learning-based TE over time-varying topologies,
+        with applications of graph neural networks. Predictive TE formulation combining optimization with GNN-based link availability
+        prediction for satellite and WAN networks.
+      </li>
+       <li>
+        <strong>Network Flow Interdiction on LEO Satellites</strong>
+        Applying optimization and dynamic programming for edge and node removal
+        to interdict facility reachability over tree and bounded-treewidth structures. Dynamic programming and optimization methods for edge and node removal
         to interdict facility reachability.
-      </li>
-      <li>
-        <strong>Traffic engineering for satellite / WAN networks</strong> –
-        predictive optimization and learning-based TE over time-varying topologies.
-      </li>
-      <li>
-        <strong>Federated learning &amp; carbon-aware training</strong> –
-        methods such as FedGreen / FedGreenCS and WeiAvgCS for efficient, diverse, and greener FL.
-      </li>
-      <li>
-        <strong>LLM steering &amp; mixture-of-agents</strong> –
-        activation steering, MoE/MoA-style architectures, and evaluation of their capabilities.
       </li>
     </ul>
   </section>
@@ -125,20 +122,12 @@
     <h2>Selected Projects</h2>
     <ul>
       <li>
-        <strong>Interdicting Facilities in Tree Networks</strong> –
-        dynamic programming algorithm with experiments against FR and Gurobi on large random trees.
+        <strong>Federated learning &amp; carbon-aware training</strong>
+        Methods such as FedGreen / FedGreenCS and WeiAvgCS for efficient, diverse, and greener FL. FedGreen method adapt model size for carbon-aware, communication-efficient training.
       </li>
       <li>
-        <strong>Satellite Traffic Engineering</strong> –
-        simulation of LEO-like constellations and TE formulations that couple prediction with routing decisions.
-      </li>
-      <li>
-        <strong>Greener Federated Learning</strong> –
-        FedGreen-style methods that adapt model size for carbon-aware, communication-efficient training.
-      </li>
-      <li>
-        <strong>Mixture-of-Agents for LLMs</strong> –
-        experiments with proposer/aggregator architectures and activation steering for reasoning quality.
+        <strong>LLM steering &amp; mixture-of-agents</strong>
+        Activation steering for large language models using sparse auto encoders, MoE/MoA-style architectures, and evaluation of their reasoning and coordination capabilities. Experiments with proposer/aggregator architectures and activation steering for reasoning quality.
       </li>
     </ul>
   </section>
@@ -147,22 +136,31 @@
     <h2>Publications &amp; Preprints</h2>
     <ul>
       <li>
-        <strong>FedGreen: Carbon-Aware Federated Learning with Model Size Adaptation</strong>, 
-        IEEE ICC 2024 – GreenNetwork Workshop.
+        • Abbasi, A., Friedman, E., Golubchik, L., Khuller, S., Paolieri, M. (2025). 
+        <strong>Edge and Node Removal in Tree Networks to Interdict Facility Reachability.</strong> (Under Review)
       </li>
       <li>
-        <strong>WeiAvgCS: Federated Learning Model Aggregation Promoting Data Diversity</strong>, 
-        IEEE ICC 2024 – ETASN Workshop.
+        • Abbasi, A., Dong, F., Wang, X., Leung, H., Zhou, J., Drew, S. (2024). 
+        <strong>FedGreen: Carbon-aware Federated Learning with Model Size Adaptation.</strong> 
+        In IEEE ICC 2024 (GreenNet Workshop). (Published)
       </li>
       <li>
-        <strong>Edge and Node Removal in Tree Networks to Interdict Facility Reachability</strong>, 
-        manuscript under review.
+        • Dong, F., Abbasi, A., Leung, H., Wang, X., Zhou, J., Drew, S. (2024). 
+        <strong>WeiAvgCS: Federated Learning Model Aggregation Promoting Data Diversity.</strong> 
+        In IEEE ICC 2024 (ETASN Workshop). (Published)
       </li>
-      <!-- Add more items here as they are accepted/preprinted -->
     </ul>
-    <!-- Once you upload your CV PDF to the repo root (e.g., Ali_Abbasi_CV.pdf), uncomment:
-    <p><a href="Ali_Abbasi_CV.pdf" target="_blank">Download my CV (PDF)</a></p>
-    -->
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <p>
+      Teaching Assistant at the University of Southern California:
+    </p>
+    <ul>
+      <li><strong>CSCI 356: Introduction to Computer Systems</strong> – Fall 2024 (Current)</li>
+      <li>Previously served as TA for courses such as Data Structures, Computer Networks, and Computer Systems.</li>
+    </ul>
   </section>
 
   <section id="contact">
